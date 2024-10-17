@@ -29,7 +29,7 @@ prediction = model.predict(input_data)
 prediction_proba = prediction[0]  
 
 # Display the result
-st.write(f'Survival Probability: {prediction_proba:.2f}')
+#st.write(f'Survival Probability: {prediction_proba:.2f}')
 
 if prediction_proba < 0.5:
     st.write('# You dead.')
