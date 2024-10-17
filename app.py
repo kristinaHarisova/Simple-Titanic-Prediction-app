@@ -14,7 +14,7 @@ st.title('Titanic Survival Prediction')
 age = st.slider('Age: ', 0, 92)
 class_ = st.selectbox('Class: ', [1, 2, 3])
 gender = st.selectbox("Female: 0, Male: 1", [0, 1])
-fare = st.number_input("Fare (ticket cost): ")
+fare = st.slider("Fare (ticket cost in $): ", [0, 512])
 
 # Prepare the input data
 input_data = pd.DataFrame({
