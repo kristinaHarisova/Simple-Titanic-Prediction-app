@@ -11,7 +11,7 @@ with open('titanic_model.pkl', 'rb') as file:
 st.title('Titanic Survival Prediction')
 
 # User input
-age = st.slider('Age: ', 0, 92)
+age = st.slider('Age: ', 0, 92, value=18)
 class_ = st.selectbox('Class: ', [1, 2, 3])
 gender = st.selectbox("Female: 0, Male: 1", [0, 1])
 fare = st.slider("Fare (ticket cost in $): ", 0, 512)
